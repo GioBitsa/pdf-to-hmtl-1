@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>post</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="bs-header">
+      <div class="bs-header-section">
+        <div class="bs-wrapper">
+          <div class="bs-headerLogo">
+            <img src="./assets/logo.png" alt="logo" />
+          </div>
+          <nav class="bs-nav">
+            <ul>
+              <li><a href="#">journals</a></li>
+              <li><a href="#">topics</a></li>
+              <li><a href="#">information</a></li>
+              <li><a href="#">author services</a></li>
+              <li><a href="#">initiatives</a></li>
+              <li><a href="#">about</a></li>
+            </ul>
+          </nav>
+          <div class="bs-headerNavButtons">
+            <div class="bs-mainButton bs-secondary">sign in \ sign up</div>
+            <div class="bs-mainButton bs-primary">submit</div>
+          </div>
+
+          <div class="bs-mobileHeaderButtons">
+            <div class="bs-headerButton" id="bs-filterHeaderToggle">
+              <i class="fa-solid fa-filter"></i>
+            </div>
+            <div class="bs-headerButton">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bs-header-section bs-header-center" id="bs-filterHeader">
+        <div class="bs-wrapper">
+          <h3>Search for Articles</h3>
+          <div class="bs-mainInput">
+            <input type="text" placeholder="Title \ Keyword" />
+          </div>
+          <div class="bs-mainInput">
+            <input type="text" placeholder="Author \ Affilation \ Email" />
+          </div>
+          <div class="bs-mainDropdown">
+            <p>Nutrients</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="bs-mainDropdown">
+            <p>All Article Types</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="bs-mainButton bs-primary">Search</div>
+          <div class="bs-mainButton bs-textOnly">Advanced</div>
+        </div>
+      </div>
+      <div class="bs-header-section bs-header-bottom">
+        <div class="bs-wrapper">
+          <div class="bs-linksHistory">
+            <p>Neutrients</p>
+            /
+            <p class="bs-linksHistory-current">Jounrals</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="bs-postMain">
+      <div class="bs-wrapper">
+        <div class="bs-content-left" id="bs-leftContent">
+          <div
+            class="bs-mainIconButton bs-closeLeftContent"
+            id="bs-leftContentClose"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="bs-card">
+            <div class="bs-card-imageContainer">
+              <img src="./assets/nutrients.png" alt="nutrients" />
+            </div>
+            <div class="bs-mainButton bs-secondary">Submit to this journal</div>
+            <div class="bs-mainButton bs-secondary">
+              Review for this journal
+            </div>
+            <div class="bs-mainButton bs-green">Propose the special issue</div>
+            <h4>Article Menu</h4>
+            <div class="bs-academicEditors">
+              <div class="bs-academicEditors-header">
+                <p>Academic Editors</p>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+              <div class="bs-academicEditors-item">
+                <div class="bs-academicEditors-item-img">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <p>Jeimi Uribari</p>
+              </div>
+              <div class="bs-academicEditors-item">
+                <div class="bs-academicEditors-item-img">
+                  <i class="fa-regular fa-user"></i>
+                </div>
+                <p>Baohai Shao</p>
+              </div>
+            </div>
+            <hr />
+            <p>Subscribe SciFeed</p>
+            <hr />
+            <p>Recommended Articles</p>
+            <hr />
+            <p>Recommended Articles</p>
+            <hr />
+            <p>Recommended Articles</p>
+            <hr />
+            <p>Recommended Articles</p>
+            <hr />
+          </div>
+          <div class="bs-card">
+            <p>Article Views</p>
+          </div>
+        </div>
+        <div class="bs-content-center">
+          <div class="bs-responsiveSideBars">
+            <div
+              class="bs-mainIconButton bs-sideBarLeft"
+              id="bs-leftContentOpen"
+            >
+              <i class="fa-solid fa-align-left"></i>
+            </div>
+            <div
+              class="bs-mainIconButton bs-sideBarRight"
+              id="bs-rightContentOpen"
+            >
+              <i class="fa-solid fa-align-right"></i>
+            </div>
+          </div>
+          <div class="bs-card">
+            <div class="bs-singlePost">
+              <div class="bs-post-header">
+                <i class="fa-solid fa-angles-left"></i>
+                <div>
+                  <div class="bs-mainButton bs-primary">
+                    Order Article Reprints
+                  </div>
+                  <div class="bs-mainIconButton bs-border-none">
+                    <i class="fa-solid fa-gear"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="bs-post-content">
+                <strong>
+                  This is an early access version, the complete PDF, HTML, and
+                  XML versions wil be available soon.
+                </strong>
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="bs-article-tag bs-tag-primary">Open Access</div>
+                  <div class="bs-article-tag">Article</div>
+                </div>
+                <h6>
+                  Dietary Advanced Glycation End Products (AGEs) and Urinary
+                  Fluorescent AGEs in Children and Adolescents: Findings from
+                  the Italian I.Family Project
+                </h6>
+                <p>
+                  b <span>Marika</span> Delo Ruso 1G©,
+                  <span>Ivana Sirangelo</span> 2E®, Fabio Lauria *1. ©®A,nnarita
+                  Formisano 1G, Clara lannuzzi 2@®, Antje Hebestreit 3E®,
+                  Valeria Pala 4®, Alfonso Siani 1® and Paola Ruso 201,
+                </p>
+                <ul class="bs-numberList">
+                  <li>
+                    nstitute of Food Sciences, National Research Council, 83100
+                    Avellino, Italy
+                  </li>
+                  <li>
+                    nstitute of Food Sciences, National Research Council, 83100
+                    Avellino, Italy
+                  </li>
+                  <li>
+                    nstitute of Food Sciences, National Research Council, 83100
+                    Avellino, Italy
+                  </li>
+                  <li>
+                    nstitute of Food Sciences, National Research Council, 83100
+                    Avellino, Italy
+                  </li>
+                </ul>
+                <p>
+                  Nutrients 2024, 16(12), 1831;
+                  https://doi.org/10.3390/nu16121831
+                </p>
+                <strong
+                  >Submission received: 2May 2024 /Revised: 29 May 2024
+                  /Accepted: 10 June 2024 /Published: 1 June 2024</strong
+                >
+              </div>
+            </div>
+            <div class="bs-singlePost">
+              <div class="bs-post-header">
+                <i class="fa-solid fa-angles-left"></i>
+                <div>
+                  <div class="bs-mainButton bs-primary">
+                    Order Article Reprints
+                  </div>
+                  <div class="bs-mainIconButton bs-border-none">
+                    <i class="fa-solid fa-gear"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="bs-post-content">
+                <strong>
+                  Submission received: 2May 2024 /Revised: 29 May 2024
+                  /Accepted: 10 June 2024 /Published: 1 June 2024
+                </strong>
+                <p>
+                  • Submission received: 2May 2024 /Revised: 29 May 2024
+                  /Accepted: 10 June 2024 /Published: 1 June 2024 This article
+                  belongs ot the Special Issue The Role of Dietary Advanced
+                  Glycation End Products on Chronic Diseases)
+                </p>
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="bs-mainButton bs-primary">Download</div>
+                  <div class="bs-mainButton bs-primary">Versions Notes</div>
+                </div>
+                <br />
+                <strong> Abstract </strong>
+                <p>
+                  Advanced glycation end products (AGEs) have been implicated ni
+                  chronic diseases ni adults, but their role ni paediatric
+                  populations remains uncertain. This stuay, conducted on t e
+                  ltallan sample of t e tramily project, aimed ot investigate
+                  the relationship between dietary and urinary fluorescent AGEs
+                  ni children and adolescents. The secondary objective was ot
+                  investigate the sources of dietary AGEs (dAGEs) and their
+                  association with dietary composition and anthropometric
+                  parameters. Dietary data were collected from 1048 participants
+                  via 24 h dietary recall ni 2013/2014 ot estimate dAGEs intake,
+                  while urinary fluorescent AGE levels were measured ni 544
+                  individuals. Participants were stratified based on dAGEs
+                  intake and compared with respect to urinary fluorescent AGE
+                  levels, anthropometric measurements, and dietary intake. The
+                  results showed no significant correlation between dietary and
+                  urinary fluorescent AGE levels, nor between dAGEs and
+                  anthropometric parameters. Notably, higher dAGEs were
+                  associated with a diet richer ni protein (especially from meat
+                  sources) and fat and lower ni carbohydrates. nI addition, the
+                  consumption of ultra-processed foods was lower ni participants
+                  with a higher DAGE intake. This study highlights the lack of a
+                  clear association between dietary and urinary fluorescent AGEs
+                  in children, but suggests a distinctive dietary pattern
+                  associated with increased dAGEs intake. Further investigation
+                  is warranted
+                </p>
+                <p>
+                  Nutrients 2024, 16(12), 1831;
+                  https://doi.org/10.3390/nu16121831
+                </p>
+                <strong>asdasdadad</strong>
+                <span
+                  >Keywords: advanced glycation end products (AGEs); urinary
+                  AGEs; diet; children; I.Family project; ultra- processed foods
+                  (UPF); population study</span
+                >
+                <h6>Share and Cite</h6>
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <div class="bs-mainIconButton bs-withBlackBackground">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="bs-mainIconButton bs-withBlackBackground">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </div>
+                  <div class="bs-mainIconButton bs-withBlackBackground">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                  <div class="bs-mainIconButton bs-withBlackBackground">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="bs-mainIconButton bs-withBlackBackground">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="bs-mainIconButton bs-withBlackBackground">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bs-content-right" id="bs-rightContent">
+          <div
+            class="bs-mainIconButton bs-closeRightContent"
+            id="bs-rightContentClose"
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="bs-card">
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-share-nodes"></i>
+              <p>Share</p>
+            </div>
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Help</p>
+            </div>
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-quote-right"></i>
+              <p>Cite</p>
+            </div>
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-comments"></i>
+              <p>Discuss in SciProfiles</p>
+            </div>
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <p>Endorse</p>
+            </div>
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-comment"></i>
+              <p>Comment</p>
+            </div>
+          </div>
+          <div class="bs-card">
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-share-nodes"></i>
+              <p>Share</p>
+            </div>
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Help</p>
+            </div>
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-quote-right"></i>
+              <p>Cite</p>
+            </div>
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-comments"></i>
+              <p>Discuss in SciProfiles</p>
+            </div>
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-thumbs-up"></i>
+              <p>Endorse</p>
+            </div>
+            <div class="bs-mainIconButton bs-withText bs-border-none">
+              <i class="fa-solid fa-comment"></i>
+              <p>Comment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bs-footer">
+      <div class="bs-footer-top">
+        <div class="bs-wrapper">
+          <div class="bs-footer-top-item">
+            <div class="bs-footerLogo">
+              <img src="./assets/footerLogo.png" alt="logo" />
+            </div>
+            <p>
+              Subscribe to receive issue release notifications and newsletters
+              from MDPI journals
+            </p>
+            <div class="bs-mainDropdown">
+              <p>Select options</p>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="bs-mainInput">
+              <input type="text" placeholder="Enter your email address..." />
+            </div>
+            <div class="bs-mainButton bs-black">Subscribe</div>
+          </div>
+          <div class="bs-footer-top-item">
+            <div class="bs-footer-top-item-label">Further Information</div>
+            <ul>
+              <li><a href="#">Article Processing Charges</a></li>
+              <li><a href="#">Pay an Invoice</a></li>
+              <li><a href="#">Open Access Policy</a></li>
+              <li><a href="#">Contact MDPI</a></li>
+              <li><a href="#">Jobs at MDPI</a></li>
+            </ul>
+          </div>
+          <div class="bs-footer-top-item">
+            <div class="bs-footer-top-item-label">Guidelines</div>
+            <ul>
+              <li><a href="#">For Authors</a></li>
+              <li><a href="#">For Reviewers</a></li>
+              <li><a href="#">For Editors</a></li>
+              <li><a href="#">For Libraries</a></li>
+              <li><a href="#">For Publishers</a></li>
+              <li><a href="#">For Societies</a></li>
+              <li><a href="#">For Conference Organizers</a></li>
+            </ul>
+          </div>
+          <div class="bs-footer-top-item">
+            <div class="bs-footer-top-item-label">MDPI Initiatives</div>
+            <ul>
+              <li><a href="#">Sciforum</a></li>
+              <li><a href="#">MDPI Books</a></li>
+              <li><a href="#">Preprints.org</a></li>
+              <li><a href="#">Scilit</a></li>
+              <li><a href="#">SciProfiles</a></li>
+              <li><a href="#">Encyclopedia</a></li>
+              <li><a href="#">JAMS</a></li>
+              <li><a href="#">Proceedings Series</a></li>
+            </ul>
+          </div>
+          <div class="bs-footer-top-item">
+            <div class="bs-footer-top-item-label">Follow MDPI</div>
+            <ul>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bs-footer-bottom">
+        <div class="bs-wrapper">
+          <p>© 1996-2024 MDPI (Basel, Switzerland) unless otherwise stated</p>
+          <ul>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
