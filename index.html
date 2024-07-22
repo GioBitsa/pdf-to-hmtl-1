@@ -136,13 +136,37 @@
             </ul>
 
             <h4>Journal Browser</h4>
-            <div class="bs-mainDropdown">
+            <div
+              class="bs-mainDropdown"
+              id="bs-mainDropdown-volume"
+              onclick="toggleDropdown('bs-mainDropdown-volume-content')"
+            >
               <p>Volume</p>
               <i class="fa-solid fa-caret-down"></i>
+              <div
+                class="bs-mainDropdown-content"
+                id="bs-mainDropdown-volume-content"
+              >
+                <a href="#">Low</a>
+                <a href="#">Medium</a>
+                <a href="#">High</a>
+              </div>
             </div>
-            <div class="bs-mainDropdown">
+            <div
+              class="bs-mainDropdown"
+              id="bs-mainDropdown-issue"
+              onclick="toggleDropdown('bs-mainDropdown-issue-content')"
+            >
               <p>Issue</p>
               <i class="fa-solid fa-caret-down"></i>
+              <div
+                class="bs-mainDropdown-content"
+                id="bs-mainDropdown-issue-content"
+              >
+                <a href="#">Low</a>
+                <a href="#">Medium</a>
+                <a href="#">High</a>
+              </div>
             </div>
             <bs-mainButton class="bs-mainButton bs-secondary">Go</bs-mainButton>
           </div>
@@ -500,14 +524,26 @@
               Subscribe to receive issue release notifications and newsletters
               from MDPI journals
             </p>
-            <div class="bs-mainDropdown">
+            <div
+              class="bs-mainDropdown"
+              id="bs-footer-mainDropdown"
+              onclick="toggleDropdown('bs-footer-dropdownContent')"
+            >
               <p>Select options</p>
               <i class="fa-solid fa-caret-down"></i>
+              <div
+                class="bs-mainDropdown-content"
+                id="bs-footer-dropdownContent"
+              >
+                <a href="#">Option 1</a>
+                <a href="#">Option 2</a>
+                <a href="#">Option 3</a>
+              </div>
             </div>
             <div class="bs-mainInput">
               <input type="text" placeholder="Enter your email address..." />
             </div>
-            <div class="bs-mainButton bs-black">Subscribe</div>
+            <div class="bs-mainButton bs-green">Subscribe</div>
           </div>
           <div class="bs-footer-top-item">
             <div class="bs-footer-top-item-label">Further Information</div>

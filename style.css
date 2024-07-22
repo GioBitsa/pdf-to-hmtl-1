@@ -16,7 +16,7 @@
   --black-800: rgba(0, 0, 0, 0.8);
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
-  --primary: #4f566f;
+  --primary: #4c4a45;
   --green: #587e64;
   --red: #9b253f;
   --background: #f5f5f5;
@@ -143,12 +143,37 @@
   border: 1px solid var(--black-400);
   background-color: var(--white);
   padding: 10px;
+  position: relative;
 }
 
 .bs-mainDropdown p {
   white-space: nowrap;
   color: var(--primary);
   font-size: 16px;
+}
+
+.bs-mainDropdown-content {
+  display: none;
+  min-width: 100px;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.bs-mainDropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.bs-mainDropdown-content a:hover {
+  background-color: #f1f1f1;
 }
 
 /* --x-- mainDropdown stylings --x-- */
@@ -854,6 +879,7 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  cursor: pointer;
 }
 
 .bs-academicEditors-header {
@@ -872,6 +898,16 @@ hr {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.bs-academicEditors-items {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bs-academicEditors.open .bs-academicEditors-items {
+  display: flex;
 }
 
 .bs-academicEditors-item p {
